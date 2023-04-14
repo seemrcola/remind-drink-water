@@ -1,0 +1,42 @@
+{
+  "publisher": "seemr",
+  "name": "remind-water-helper",
+  "displayName": "remind-water-helper",
+  "version": "0.0.2",
+  "description": "记得喝水",
+  "categories": [
+    "Other"
+  ],
+  "main": "./out/extension.js",
+  "engines": {
+    "vscode": "^1.77.0"
+  },
+  "activationEvents": [
+    "*"
+  ],
+  "contributes": {
+    "commands": [
+      {
+        "command": "remind-water-helper.water",
+        "title": "more water"
+      }
+    ]
+  },
+  "scripts": {
+    "vscode:prepublish": "pnpm run compile",
+    "compile": "tsc -p ./",
+    "watch": "tsc -watch -p ./",
+    "pretest": "pnpm run compile && pnpm run lint",
+    "lint": "eslint src --ext ts"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "@antfu/eslint-config": "^0.38.4",
+    "@types/glob": "^8.1.0",
+    "@types/node": "16.x",
+    "@types/vscode": "^1.77.0",
+    "eslint": "^8.36.0",
+    "glob": "^8.1.0",
+    "typescript": "^4.9.5"
+  }
+}
