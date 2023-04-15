@@ -19,7 +19,9 @@ export function activate(context: vscode.ExtensionContext) {
             vscode.window.showInformationMessage(seriousWarning)
             bussyCount = 0
           }
+          return
         }
+        bussyCount = 0
       })
   }, 30 * 60 * 1000)
 }
