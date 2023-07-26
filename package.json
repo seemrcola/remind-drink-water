@@ -8,6 +8,7 @@
     "Other"
   ],
   "main": "./out/extension.js",
+  "icon": "icon/water.png",
   "engines": {
     "vscode": "^1.77.0"
   },
